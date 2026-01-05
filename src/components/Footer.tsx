@@ -1,19 +1,20 @@
+import { Link } from "react-router-dom";
 import { Instagram, Linkedin, Facebook, Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 const quickLinks = [
-  { name: "Home", href: "#home" },
-  { name: "About Us", href: "#about" },
-  { name: "Contact", href: "#contact" },
-  { name: "Blog", href: "#" },
+  { name: "Home", href: "/" },
+  { name: "About Us", href: "/#about" },
+  { name: "Contact", href: "/contact" },
+  { name: "Packages", href: "/packages" },
 ];
 
 const serviceLinks = [
-  { name: "Holiday Tours", href: "#services" },
-  { name: "Event Management", href: "#events" },
-  { name: "Medical Tourism", href: "#services" },
-  { name: "Wildlife Safaris", href: "#services" },
+  { name: "Holiday Tours", href: "/services/holiday-tours" },
+  { name: "Event Management", href: "/services/events" },
+  { name: "Medical Tourism", href: "/services/medical-tourism" },
+  { name: "Wildlife Safaris", href: "/services/wildlife" },
 ];
 
 const Footer = () => {
@@ -70,13 +71,13 @@ const Footer = () => {
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="font-sans text-sand/70 hover:text-primary transition-colors flex items-center gap-2 group"
                   >
                     <ArrowRight className="w-4 h-4 opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all" />
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -90,13 +91,13 @@ const Footer = () => {
             <ul className="space-y-3">
               {serviceLinks.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="font-sans text-sand/70 hover:text-primary transition-colors flex items-center gap-2 group"
                   >
                     <ArrowRight className="w-4 h-4 opacity-0 -ml-6 group-hover:opacity-100 group-hover:ml-0 transition-all" />
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -153,12 +154,12 @@ const Footer = () => {
             © 2026 Siddhiyan. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            <a href="#" className="font-sans text-sm text-sand/60 hover:text-primary transition-colors">
+            <Link to="/privacy" className="font-sans text-sm text-sand/60 hover:text-primary transition-colors">
               Privacy Policy
-            </a>
-            <a href="#" className="font-sans text-sm text-sand/60 hover:text-primary transition-colors">
+            </Link>
+            <Link to="/terms" className="font-sans text-sm text-sand/60 hover:text-primary transition-colors">
               Terms of Service
-            </a>
+            </Link>
           </div>
         </div>
       </div>
