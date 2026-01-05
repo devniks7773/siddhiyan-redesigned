@@ -1,22 +1,27 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Instagram, Linkedin, Facebook, Phone, Mail } from "lucide-react";
+import { Menu, X, Instagram, Linkedin, Facebook, Phone, Mail, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import BookingModal from "@/components/BookingModal";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
-const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/#about" },
-  { name: "Services", href: "/#services" },
-  { name: "Packages", href: "/packages" },
-  { name: "Contact", href: "/contact" },
+const serviceLinks = [
+  { name: "Travel & Tours", href: "/services/travel-and-tours" },
+  { name: "Managing Events", href: "/services/event-management" },
+  { name: "Destination Marketing", href: "/services/destination-marketing" },
 ];
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isBookingOpen, setIsBookingOpen] = useState(false);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -28,20 +33,17 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Handle hash navigation
   const handleNavClick = (href: string) => {
     setIsMobileMenuOpen(false);
     
     if (href.startsWith("/#")) {
       const hash = href.substring(1);
       if (location.pathname === "/") {
-        // Already on home page, scroll to section
         const element = document.querySelector(hash);
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });
         }
       } else {
-        // Navigate to home first, then scroll
         navigate("/");
         setTimeout(() => {
           const element = document.querySelector(hash);
@@ -59,6 +61,8 @@ const Navbar = () => {
     return location.pathname.startsWith(href);
   };
 
+  const isServicesActive = serviceLinks.some(link => location.pathname.startsWith(link.href));
+
   return (
     <>
       <header
@@ -66,7 +70,7 @@ const Navbar = () => {
           isScrolled ? "glass-effect py-3" : "bg-transparent py-5"
         }`}
       >
-        {/* Top bar with contact info - hidden on scroll */}
+        {/* Top bar with contact info */}
         <AnimatePresence>
           {!isScrolled && (
             <motion.div
@@ -109,39 +113,84 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-10">
-            {navLinks.map((link) => (
-              link.href.startsWith("/#") ? (
+          <div className="hidden lg:flex items-center gap-8">
+            <Link
+              to="/"
+              className={`font-sans text-sm font-medium transition-colors relative group ${
+                isActive("/") ? "text-primary" : "text-foreground/80 hover:text-primary"
+              }`}
+            >
+              Home
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+            </Link>
+
+            <button
+              onClick={() => handleNavClick("/#about")}
+              className={`font-sans text-sm font-medium transition-colors relative group ${
+                isActive("/#about") ? "text-primary" : "text-foreground/80 hover:text-primary"
+              }`}
+            >
+              About
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+            </button>
+
+            {/* Services Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
                 <button
-                  key={link.name}
-                  onClick={() => handleNavClick(link.href)}
-                  className={`font-sans text-sm font-medium transition-colors relative group ${
-                    isActive(link.href) ? "text-primary" : "text-foreground/80 hover:text-primary"
+                  className={`font-sans text-sm font-medium transition-colors relative group flex items-center gap-1 ${
+                    isServicesActive ? "text-primary" : "text-foreground/80 hover:text-primary"
                   }`}
                 >
-                  {link.name}
+                  Services
+                  <ChevronDown size={14} />
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
                 </button>
-              ) : (
-                <Link
-                  key={link.name}
-                  to={link.href}
-                  className={`font-sans text-sm font-medium transition-colors relative group ${
-                    isActive(link.href) ? "text-primary" : "text-foreground/80 hover:text-primary"
-                  }`}
-                >
-                  {link.name}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
-                </Link>
-              )
-            ))}
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="bg-background border border-border shadow-luxury min-w-[200px]">
+                {serviceLinks.map((link) => (
+                  <DropdownMenuItem key={link.name} asChild>
+                    <Link
+                      to={link.href}
+                      className={`w-full cursor-pointer ${
+                        isActive(link.href) ? "text-primary" : ""
+                      }`}
+                    >
+                      {link.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            <Link
+              to="/best-practices"
+              className={`font-sans text-sm font-medium transition-colors relative group ${
+                isActive("/best-practices") ? "text-primary" : "text-foreground/80 hover:text-primary"
+              }`}
+            >
+              Best Practices
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+            </Link>
+
+            <Link
+              to="/clients"
+              className={`font-sans text-sm font-medium transition-colors relative group ${
+                isActive("/clients") ? "text-primary" : "text-foreground/80 hover:text-primary"
+              }`}
+            >
+              Clients
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+            </Link>
           </div>
 
           {/* CTA Button */}
-          <div className="hidden lg:block">
-            <Button variant="luxury" size="lg" onClick={() => setIsBookingOpen(true)}>
-              Plan My Trip
-            </Button>
+          <div className="hidden lg:flex items-center gap-4">
+            <Link to="/contact">
+              <Button variant="luxury" size="lg">
+                Contact Us
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -163,36 +212,112 @@ const Navbar = () => {
               exit={{ opacity: 0, height: 0 }}
               className="lg:hidden bg-background border-t border-border"
             >
-              <div className="container-luxury py-6 flex flex-col gap-4">
-                {navLinks.map((link, index) => (
-                  link.href.startsWith("/#") ? (
-                    <motion.button
-                      key={link.name}
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.1 }}
-                      className="font-sans text-lg font-medium text-foreground/80 hover:text-primary transition-colors py-2 text-left"
-                      onClick={() => handleNavClick(link.href)}
-                    >
-                      {link.name}
-                    </motion.button>
-                  ) : (
-                    <motion.div
-                      key={link.name}
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.1 }}
-                    >
-                      <Link
-                        to={link.href}
-                        className="font-sans text-lg font-medium text-foreground/80 hover:text-primary transition-colors py-2 block"
-                        onClick={() => setIsMobileMenuOpen(false)}
+              <div className="container-luxury py-6 flex flex-col gap-2">
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0 }}
+                >
+                  <Link
+                    to="/"
+                    className="font-sans text-lg font-medium text-foreground/80 hover:text-primary transition-colors py-2 block"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Home
+                  </Link>
+                </motion.div>
+
+                <motion.button
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.05 }}
+                  className="font-sans text-lg font-medium text-foreground/80 hover:text-primary transition-colors py-2 text-left"
+                  onClick={() => handleNavClick("/#about")}
+                >
+                  About
+                </motion.button>
+
+                {/* Mobile Services Accordion */}
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.1 }}
+                >
+                  <button
+                    className="font-sans text-lg font-medium text-foreground/80 hover:text-primary transition-colors py-2 flex items-center gap-2 w-full text-left"
+                    onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                  >
+                    Services
+                    <ChevronDown 
+                      size={18} 
+                      className={`transition-transform ${isMobileServicesOpen ? "rotate-180" : ""}`}
+                    />
+                  </button>
+                  <AnimatePresence>
+                    {isMobileServicesOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        className="pl-4 flex flex-col gap-1 overflow-hidden"
                       >
-                        {link.name}
-                      </Link>
-                    </motion.div>
-                  )
-                ))}
+                        {serviceLinks.map((link) => (
+                          <Link
+                            key={link.name}
+                            to={link.href}
+                            className="font-sans text-base text-foreground/70 hover:text-primary transition-colors py-2 block"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                          >
+                            {link.name}
+                          </Link>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.15 }}
+                >
+                  <Link
+                    to="/best-practices"
+                    className="font-sans text-lg font-medium text-foreground/80 hover:text-primary transition-colors py-2 block"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Best Practices
+                  </Link>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.2 }}
+                >
+                  <Link
+                    to="/clients"
+                    className="font-sans text-lg font-medium text-foreground/80 hover:text-primary transition-colors py-2 block"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Clients
+                  </Link>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.25 }}
+                >
+                  <Link
+                    to="/contact"
+                    className="font-sans text-lg font-medium text-foreground/80 hover:text-primary transition-colors py-2 block"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Contact Us
+                  </Link>
+                </motion.div>
+
                 <Button 
                   variant="luxury" 
                   size="lg" 
@@ -204,6 +329,7 @@ const Navbar = () => {
                 >
                   Plan My Trip
                 </Button>
+
                 <div className="flex items-center gap-6 pt-4 border-t border-border mt-2">
                   <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                     <Instagram size={20} />

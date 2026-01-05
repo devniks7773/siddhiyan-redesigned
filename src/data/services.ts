@@ -163,6 +163,78 @@ export const services: Service[] = [
       "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80"
     ],
     packages: []
+  },
+  {
+    slug: "travel-and-tours",
+    title: "Travel & Tours",
+    tagline: "Curated journeys to extraordinary destinations",
+    description: "Discover the world with Siddhiyan's expertly crafted travel packages. We specialize in creating seamless travel experiences that combine comfort, adventure, and cultural immersion. Whether you're seeking a relaxing beach getaway, a thrilling mountain expedition, or a cultural exploration of ancient cities, our travel consultants design itineraries that match your dreams.",
+    heroImage: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=2000&q=80",
+    highlights: [
+      "Comprehensive travel planning from start to finish",
+      "Handpicked hotels and resorts for every budget",
+      "Experienced local guides at every destination",
+      "Flexible itineraries tailored to your pace",
+      "Visa assistance and travel documentation support",
+      "Group tours and private journeys available"
+    ],
+    gallery: [
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80"
+    ],
+    packages: []
+  },
+  {
+    slug: "event-management",
+    title: "Managing Events",
+    tagline: "Creating memorable experiences for every occasion",
+    description: "From corporate conferences to destination weddings, Siddhiyan delivers flawless event management services. Our experienced team handles every detail—venue selection, décor, catering, entertainment, and logistics—ensuring your event exceeds expectations. We've successfully managed events ranging from intimate gatherings of 50 to grand celebrations with 5000+ attendees.",
+    heroImage: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=2000&q=80",
+    highlights: [
+      "Corporate events, conferences, and seminars",
+      "Destination weddings and celebrations",
+      "Product launches and brand activations",
+      "Cultural events and festivals",
+      "VIP hospitality and protocol management",
+      "Complete vendor coordination and management"
+    ],
+    gallery: [
+      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1478146896981-b80fe463b330?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80"
+    ],
+    packages: []
+  },
+  {
+    slug: "destination-marketing",
+    title: "Destination Marketing",
+    tagline: "Promoting destinations to the world",
+    description: "Siddhiyan partners with tourism boards, hotels, and destination management organizations to create impactful marketing campaigns. Our destination marketing services combine digital expertise with deep industry knowledge to attract travelers and boost tourism. We craft compelling narratives that showcase the unique appeal of each destination.",
+    heroImage: "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=2000&q=80",
+    highlights: [
+      "Tourism board partnerships and campaigns",
+      "Digital marketing and social media strategy",
+      "Content creation and storytelling",
+      "Trade shows and exhibition management",
+      "Familiarization trips for travel agents",
+      "Brand development for destinations"
+    ],
+    gallery: [
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
+    ],
+    packages: []
   }
 ];
 
