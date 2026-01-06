@@ -124,15 +124,15 @@ const Navbar = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
             </Link>
 
-            <button
-              onClick={() => handleNavClick("/#about")}
+            <Link
+              to="/about"
               className={`font-sans text-sm font-medium transition-colors relative group ${
-                isActive("/#about") ? "text-primary" : "text-foreground/80 hover:text-primary"
+                isActive("/about") ? "text-primary" : "text-foreground/80 hover:text-primary"
               }`}
             >
               About
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
-            </button>
+            </Link>
 
             {/* Services Dropdown */}
             <DropdownMenu>
@@ -227,15 +227,19 @@ const Navbar = () => {
                   </Link>
                 </motion.div>
 
-                <motion.button
+                <motion.div
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.05 }}
-                  className="font-sans text-lg font-medium text-foreground/80 hover:text-primary transition-colors py-2 text-left"
-                  onClick={() => handleNavClick("/#about")}
                 >
-                  About
-                </motion.button>
+                  <Link
+                    to="/about"
+                    className="font-sans text-lg font-medium text-foreground/80 hover:text-primary transition-colors py-2 block"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    About
+                  </Link>
+                </motion.div>
 
                 {/* Mobile Services Accordion */}
                 <motion.div
