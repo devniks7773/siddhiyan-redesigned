@@ -21,364 +21,188 @@ export interface Package {
 
 export const services: Service[] = [
   {
-    slug: "holiday-tours",
-    title: "Holiday Tours",
-    tagline: "Unforgettable vacations crafted just for you",
-    description: "Discover the world's most breathtaking destinations with our handcrafted vacation packages. From serene beaches of Goa to the majestic Himalayas, from romantic European getaways to exotic Southeast Asian escapes, we curate every detail to ensure your holiday is nothing short of extraordinary. Our expert travel designers work closely with you to understand your preferences, creating personalized itineraries that balance adventure, relaxation, and cultural immersion.",
-    heroImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80",
+    slug: "inbound-outbound-tours",
+    title: "Inbound & Outbound Tours",
+    tagline: "Complete travel solutions for domestic and international journeys",
+    description: "Siddhiyan offers comprehensive travel services for both inbound and outbound tours. Whether you're planning a domestic getaway or an international adventure, we handle every aspect of your journey with precision and care. From flight bookings to hotel reservations, visa assistance to forex services, we ensure a seamless travel experience that lets you focus on creating memories.",
+    heroImage: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=2000&q=80",
     highlights: [
-      "Personalized itineraries tailored to your preferences",
-      "Hand-picked luxury accommodations",
-      "Private guided tours with local experts",
-      "24/7 concierge support during your trip",
-      "Seamless airport transfers and logistics",
-      "Exclusive access to hidden gems and local experiences"
+      "Air tickets booking for domestic and international flights",
+      "Premium hotel bookings across all categories",
+      "Fleet arrangements for comfortable ground transportation",
+      "Visa assistance and documentation support",
+      "Forex services for hassle-free currency exchange",
+      "Travel insurance for complete peace of mind",
+      "Train tickets and IRCTC packages",
+      "Educational trips for schools and institutions",
+      "Air charter and cruise bookings for luxury travel"
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?auto=format&fit=crop&w=800&q=80"
     ],
     packages: []
   },
   {
-    slug: "pilgrimage",
-    title: "Pilgrimage Tours",
-    tagline: "Sacred journeys for spiritual awakening",
-    description: "Embark on transformative spiritual journeys to India's holiest sites. Our pilgrimage tours are designed with deep respect for tradition while ensuring your comfort and safety. Visit the sacred temples of Varanasi, the serene ghats of Rishikesh, the divine shrines of Char Dham, and many more spiritual destinations. We handle all logistics so you can focus entirely on your spiritual experience.",
-    heroImage: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=2000&q=80",
+    slug: "events-management",
+    title: "Events Management",
+    tagline: "Creating unforgettable experiences for weddings and corporate events",
+    description: "From dream weddings to successful corporate gatherings, Siddhiyan's event management services bring your vision to life. We specialize in destination weddings that blend tradition with elegance, and MICE (Meetings, Incentives, Conferences, and Exhibitions) events that deliver results. Our experienced team handles every detail—from venue selection and décor to catering and entertainment—ensuring flawless execution.",
+    heroImage: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=2000&q=80",
     highlights: [
-      "Expert spiritual guides with deep knowledge",
-      "Comfortable accommodation near holy sites",
-      "Special darshan arrangements where possible",
-      "Group prayers and meditation sessions",
-      "Vegetarian cuisine throughout the journey",
-      "Assistance with religious rituals and offerings"
-    ],
-    gallery: [
-      "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1545126178-862cdb469409?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1591018653367-7d150e706625?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80"
-    ],
-    packages: []
-  },
-  {
-    slug: "wildlife",
-    title: "Wildlife Safaris",
-    tagline: "Encounter India's majestic wildlife",
-    description: "Experience the thrill of encountering India's magnificent wildlife in their natural habitats. Our safari experiences take you to the heart of tiger reserves, bird sanctuaries, and pristine nature trails. From the royal Bengal tigers of Ranthambore to the one-horned rhinos of Kaziranga, witness nature's most spectacular creatures with expert naturalists guiding your journey.",
-    heroImage: "https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=2000&q=80",
-    highlights: [
-      "Expert naturalists and wildlife photographers",
-      "Premium safari lodges and jungle camps",
-      "Multiple game drives for maximum sighting chances",
-      "Bird watching and nature walks included",
-      "Conservation-focused responsible tourism",
-      "Night safaris where permitted"
-    ],
-    gallery: [
-      "https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1456926631375-92c8ce872def?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1544985361-b420d7a77043?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1474511320723-9a56873571b7?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1585970480901-90d6bb2a48b5?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=800&q=80"
-    ],
-    packages: []
-  },
-  {
-    slug: "medical-tourism",
-    title: "Medical Tourism",
-    tagline: "World-class healthcare with personalized care",
-    description: "Access India's world-renowned healthcare facilities combined with comfortable recovery retreats. We partner with JCI-accredited hospitals and top medical professionals to provide comprehensive medical travel packages. From cosmetic procedures to major surgeries, cardiac care to wellness retreats, we ensure you receive the best medical care while managing all travel logistics.",
-    heroImage: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=2000&q=80",
-    highlights: [
-      "Partnerships with JCI-accredited hospitals",
-      "Assistance with medical visa and documentation",
-      "Pre-arrival consultations with specialists",
-      "Comfortable recovery accommodations",
-      "Post-procedure wellness and rehabilitation",
-      "Family accommodation arrangements"
-    ],
-    gallery: [
-      "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1540555700478-4be289fbec8a?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=800&q=80"
-    ],
-    packages: []
-  },
-  {
-    slug: "adventure",
-    title: "Adventure Tours",
-    tagline: "Thrilling experiences for the bold explorer",
-    description: "Push your limits with our adrenaline-pumping adventure tours. Whether you're trekking through Himalayan trails, white-water rafting in Rishikesh, paragliding over Bir Billing, or exploring the rugged terrains of Ladakh, our adventure packages are designed for those who seek excitement. All activities are conducted with certified professionals and top-grade safety equipment.",
-    heroImage: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2000&q=80",
-    highlights: [
-      "Certified adventure guides and instructors",
-      "International-standard safety equipment",
-      "Activities for all skill levels",
-      "Camping under the stars included",
-      "Photography assistance for adventure shots",
-      "Comprehensive travel insurance coverage"
-    ],
-    gallery: [
-      "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1527004013197-933c4bb611b3?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1533130061792-64b345e4a833?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?auto=format&fit=crop&w=800&q=80"
-    ],
-    packages: []
-  },
-  {
-    slug: "events",
-    title: "Event Management",
-    tagline: "Flawless events, unforgettable memories",
-    description: "From intimate gatherings to grand celebrations, we orchestrate events that leave lasting impressions. Our event management expertise spans destination weddings, corporate conferences, product launches, and private celebrations. With meticulous attention to detail and a network of premium vendors, we transform your vision into reality while you enjoy every moment.",
-    heroImage: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=2000&q=80",
-    highlights: [
-      "End-to-end event planning and execution",
-      "Access to exclusive venues across India",
-      "Premium vendor network for all services",
-      "Custom theme design and decoration",
-      "Guest management and hospitality",
-      "Entertainment and artist bookings"
+      "Destination weddings at stunning venues across India",
+      "Traditional and themed wedding planning",
+      "Corporate meetings and conferences",
+      "Incentive travel programs for teams",
+      "Exhibitions and trade show management",
+      "End-to-end event coordination",
+      "Premium vendor network for catering, décor, and entertainment",
+      "Guest management and hospitality services"
     ],
     gallery: [
       "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1478146896981-b80fe463b330?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80"
-    ],
-    packages: []
-  },
-  {
-    slug: "travel-and-tours",
-    title: "Travel & Tours",
-    tagline: "Curated journeys to extraordinary destinations",
-    description: "Discover the world with Siddhiyan's expertly crafted travel packages. We specialize in creating seamless travel experiences that combine comfort, adventure, and cultural immersion. Whether you're seeking a relaxing beach getaway, a thrilling mountain expedition, or a cultural exploration of ancient cities, our travel consultants design itineraries that match your dreams.",
-    heroImage: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=2000&q=80",
-    highlights: [
-      "Comprehensive travel planning from start to finish",
-      "Handpicked hotels and resorts for every budget",
-      "Experienced local guides at every destination",
-      "Flexible itineraries tailored to your pace",
-      "Visa assistance and travel documentation support",
-      "Group tours and private journeys available"
-    ],
-    gallery: [
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80"
-    ],
-    packages: []
-  },
-  {
-    slug: "event-management",
-    title: "Managing Events",
-    tagline: "Creating memorable experiences for every occasion",
-    description: "From corporate conferences to destination weddings, Siddhiyan delivers flawless event management services. Our experienced team handles every detail—venue selection, décor, catering, entertainment, and logistics—ensuring your event exceeds expectations. We've successfully managed events ranging from intimate gatherings of 50 to grand celebrations with 5000+ attendees.",
-    heroImage: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=2000&q=80",
-    highlights: [
-      "Corporate events, conferences, and seminars",
-      "Destination weddings and celebrations",
-      "Product launches and brand activations",
-      "Cultural events and festivals",
-      "VIP hospitality and protocol management",
-      "Complete vendor coordination and management"
-    ],
-    gallery: [
       "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1478146896981-b80fe463b330?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1492684223066-81342ee5ff32?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80"
     ],
     packages: []
   },
   {
-    slug: "destination-marketing",
-    title: "Destination Marketing",
-    tagline: "Promoting destinations to the world",
-    description: "Siddhiyan partners with tourism boards, hotels, and destination management organizations to create impactful marketing campaigns. Our destination marketing services combine digital expertise with deep industry knowledge to attract travelers and boost tourism. We craft compelling narratives that showcase the unique appeal of each destination.",
-    heroImage: "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=2000&q=80",
+    slug: "handicrafts-jewellery",
+    title: "Handicrafts & Jewellery",
+    tagline: "Exquisite artistry in sculptures and precious ornaments",
+    description: "Discover the finest collection of traditional Indian handicrafts and exclusive jewellery at Siddhiyan. Our curated selection features masterfully crafted wooden and stone sculptures that showcase India's rich artistic heritage, alongside stunning gold and silver jewellery pieces that blend traditional craftsmanship with contemporary designs. Each piece tells a story of skilled artisans and timeless elegance.",
+    heroImage: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=2000&q=80",
     highlights: [
-      "Tourism board partnerships and campaigns",
-      "Digital marketing and social media strategy",
-      "Content creation and storytelling",
-      "Trade shows and exhibition management",
-      "Familiarization trips for travel agents",
-      "Brand development for destinations"
+      "Handcrafted wooden sculptures by master artisans",
+      "Exquisite stone carvings and sculptures",
+      "Exclusive gold jewellery collections",
+      "Sterling silver ornaments and accessories",
+      "Traditional and contemporary designs",
+      "Customized jewellery on order",
+      "Authentic certification for precious metals",
+      "Corporate gifting solutions"
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80"
     ],
     packages: []
   }
 ];
 
 export const packages: Package[] = [
-  // Holiday Tours
+  // Inbound & Outbound Tours
   {
-    id: "kerala-backwaters",
-    title: "Kerala Backwaters Bliss",
-    destination: "Kerala",
-    duration: "5 Days / 4 Nights",
-    price: "₹35,000",
-    image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80",
-    category: "holiday-tours"
+    id: "domestic-holiday",
+    title: "Domestic Holiday Package",
+    destination: "Pan India",
+    duration: "Customizable",
+    price: "Custom",
+    image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80",
+    category: "inbound-outbound-tours"
   },
   {
-    id: "rajasthan-royal",
-    title: "Royal Rajasthan Heritage",
-    destination: "Rajasthan",
-    price: "₹45,000",
-    duration: "7 Days / 6 Nights",
-    image: "https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=800&q=80",
-    category: "holiday-tours"
+    id: "international-tour",
+    title: "International Tour Package",
+    destination: "Worldwide",
+    duration: "Customizable",
+    price: "Custom",
+    image: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80",
+    category: "inbound-outbound-tours"
   },
   {
-    id: "goa-beaches",
-    title: "Goa Beach Escape",
-    destination: "Goa",
-    duration: "4 Days / 3 Nights",
-    price: "₹22,000",
-    image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80",
-    category: "holiday-tours"
-  },
-  // Wildlife
-  {
-    id: "jim-corbett",
-    title: "Jim Corbett Tiger Safari",
-    destination: "Uttarakhand",
-    duration: "3 Days / 2 Nights",
-    price: "₹28,000",
-    image: "https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=800&q=80",
-    category: "wildlife"
+    id: "educational-trip",
+    title: "Educational Trip",
+    destination: "Various",
+    duration: "3-7 Days",
+    price: "Custom",
+    image: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=800&q=80",
+    category: "inbound-outbound-tours"
   },
   {
-    id: "ranthambore",
-    title: "Ranthambore Wildlife Expedition",
-    destination: "Rajasthan",
-    duration: "4 Days / 3 Nights",
-    price: "₹32,000",
-    image: "https://images.unsplash.com/photo-1456926631375-92c8ce872def?auto=format&fit=crop&w=800&q=80",
-    category: "wildlife"
+    id: "cruise-booking",
+    title: "Cruise Packages",
+    destination: "International Waters",
+    duration: "5-14 Days",
+    price: "Custom",
+    image: "https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=800&q=80",
+    category: "inbound-outbound-tours"
   },
-  {
-    id: "kaziranga",
-    title: "Kaziranga Rhino Safari",
-    destination: "Assam",
-    duration: "4 Days / 3 Nights",
-    price: "₹38,000",
-    image: "https://images.unsplash.com/photo-1585970480901-90d6bb2a48b5?auto=format&fit=crop&w=800&q=80",
-    category: "wildlife"
-  },
-  // Adventure
-  {
-    id: "manali-trekking",
-    title: "Manali Adventure Trek",
-    destination: "Himachal Pradesh",
-    duration: "6 Days / 5 Nights",
-    price: "₹25,000",
-    image: "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=800&q=80",
-    category: "adventure"
-  },
-  {
-    id: "rishikesh-rafting",
-    title: "Rishikesh Rafting & Camping",
-    destination: "Uttarakhand",
-    duration: "3 Days / 2 Nights",
-    price: "₹15,000",
-    image: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80",
-    category: "adventure"
-  },
-  {
-    id: "ladakh-expedition",
-    title: "Ladakh Bike Expedition",
-    destination: "Ladakh",
-    duration: "10 Days / 9 Nights",
-    price: "₹55,000",
-    image: "https://images.unsplash.com/photo-1527004013197-933c4bb611b3?auto=format&fit=crop&w=800&q=80",
-    category: "adventure"
-  },
-  // Pilgrimage
-  {
-    id: "varanasi-spiritual",
-    title: "Varanasi Spiritual Journey",
-    destination: "Varanasi",
-    duration: "4 Days / 3 Nights",
-    price: "₹20,000",
-    image: "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80",
-    category: "pilgrimage"
-  },
-  {
-    id: "char-dham",
-    title: "Char Dham Yatra",
-    destination: "Uttarakhand",
-    duration: "12 Days / 11 Nights",
-    price: "₹65,000",
-    image: "https://images.unsplash.com/photo-1545126178-862cdb469409?auto=format&fit=crop&w=800&q=80",
-    category: "pilgrimage"
-  },
-  {
-    id: "golden-temple",
-    title: "Golden Temple & Wagah Border",
-    destination: "Punjab",
-    duration: "3 Days / 2 Nights",
-    price: "₹18,000",
-    image: "https://images.unsplash.com/photo-1591018653367-7d150e706625?auto=format&fit=crop&w=800&q=80",
-    category: "pilgrimage"
-  },
-  // Medical Tourism
-  {
-    id: "wellness-retreat",
-    title: "Ayurveda Wellness Retreat",
-    destination: "Kerala",
-    duration: "7 Days / 6 Nights",
-    price: "₹75,000",
-    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80",
-    category: "medical-tourism"
-  },
-  // Events
+  // Events Management
   {
     id: "destination-wedding",
-    title: "Destination Wedding Package",
-    destination: "Udaipur",
-    duration: "5 Days / 4 Nights",
+    title: "Destination Wedding",
+    destination: "Pan India",
+    duration: "3-5 Days",
     price: "Custom",
     image: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80",
-    category: "events"
+    category: "events-management"
   },
   {
-    id: "corporate-retreat",
-    title: "Corporate Team Retreat",
-    destination: "Goa",
-    duration: "3 Days / 2 Nights",
+    id: "corporate-conference",
+    title: "Corporate Conference",
+    destination: "Pan India",
+    duration: "1-3 Days",
     price: "Custom",
     image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80",
-    category: "events"
+    category: "events-management"
+  },
+  {
+    id: "mice-event",
+    title: "MICE Event Package",
+    destination: "Pan India",
+    duration: "Customizable",
+    price: "Custom",
+    image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=800&q=80",
+    category: "events-management"
+  },
+  // Handicrafts & Jewellery
+  {
+    id: "wooden-sculptures",
+    title: "Wooden Sculptures Collection",
+    destination: "Delivery Available",
+    duration: "Made to Order",
+    price: "Custom",
+    image: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=800&q=80",
+    category: "handicrafts-jewellery"
+  },
+  {
+    id: "stone-carvings",
+    title: "Stone Carvings & Sculptures",
+    destination: "Delivery Available",
+    duration: "Made to Order",
+    price: "Custom",
+    image: "https://images.unsplash.com/photo-1544967082-d9d25d867d66?auto=format&fit=crop&w=800&q=80",
+    category: "handicrafts-jewellery"
+  },
+  {
+    id: "gold-jewellery",
+    title: "Exclusive Gold Jewellery",
+    destination: "Store & Delivery",
+    duration: "Ready & Custom",
+    price: "Custom",
+    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80",
+    category: "handicrafts-jewellery"
+  },
+  {
+    id: "silver-jewellery",
+    title: "Silver Jewellery Collection",
+    destination: "Store & Delivery",
+    duration: "Ready & Custom",
+    price: "Custom",
+    image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=800&q=80",
+    category: "handicrafts-jewellery"
   }
 ];
 
@@ -392,7 +216,7 @@ export const getPackagesByCategory = (category: string): Package[] => {
 
 export const searchPackages = (query: string): Package[] => {
   const lowerQuery = query.toLowerCase();
-  return packages.filter(p => 
+  return packages.filter(p =>
     p.title.toLowerCase().includes(lowerQuery) ||
     p.destination.toLowerCase().includes(lowerQuery) ||
     p.category.toLowerCase().includes(lowerQuery)

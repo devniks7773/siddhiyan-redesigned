@@ -4,40 +4,22 @@ import { ArrowRight } from "lucide-react";
 
 const services = [
   {
-    slug: "holiday-tours",
-    title: "Holiday Tours",
-    description: "Handcrafted vacation packages to the world's most breathtaking destinations. From serene beaches to majestic mountains.",
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+    slug: "inbound-outbound-tours",
+    title: "Inbound & Outbound Tours",
+    description: "Complete travel solutions including air tickets, hotel bookings, visa assistance, forex services, train tickets, and luxury cruise bookings.",
+    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80",
   },
   {
-    slug: "pilgrimage",
-    title: "Pilgrimage Tours",
-    description: "Sacred journeys to India's holiest sites. Experience spiritual awakening with our carefully planned religious tours.",
-    image: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80",
+    slug: "events-management",
+    title: "Events Management",
+    description: "Creating unforgettable experiences for destination weddings and MICE (Meetings, Incentives, Conferences & Exhibitions) events.",
+    image: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80",
   },
   {
-    slug: "wildlife",
-    title: "Wildlife Safaris",
-    description: "Encounter India's magnificent wildlife in their natural habitats. Tiger reserves, bird sanctuaries, and nature trails.",
-    image: "https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    slug: "medical-tourism",
-    title: "Medical Tourism",
-    description: "World-class healthcare combined with recovery retreats. Access top hospitals and wellness centers across India.",
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    slug: "adventure",
-    title: "Adventure Tours",
-    description: "Thrilling experiences for the bold explorer. Trekking, rafting, paragliding, and more adrenaline-pumping activities.",
-    image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    slug: "events",
-    title: "Event Management",
-    description: "Flawless corporate events, weddings, and celebrations. From intimate gatherings to grand conferences.",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80",
+    slug: "handicrafts-jewellery",
+    title: "Handicrafts & Jewellery",
+    description: "Exquisite collection of wooden and stone sculptures alongside exclusive gold and silver jewellery crafted by master artisans.",
+    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80",
   },
 ];
 
@@ -82,8 +64,8 @@ const Services = () => {
             Our Expertise
           </h2>
           <p className="text-body-lg text-muted-foreground max-w-2xl mx-auto">
-            From dream vacations to seamless corporate events, we craft 
-            experiences that exceed expectations.
+            From seamless travel experiences to grand celebrations and exquisite craftsmanship,
+            we deliver excellence across every service.
           </p>
         </motion.div>
 

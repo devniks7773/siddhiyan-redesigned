@@ -11,13 +11,10 @@ import BookingModal from "@/components/BookingModal";
 import { packages, searchPackages, Package } from "@/data/services";
 
 const categories = [
-  { id: "all", label: "All Packages" },
-  { id: "holiday-tours", label: "Holiday Tours" },
-  { id: "wildlife", label: "Wildlife Safaris" },
-  { id: "adventure", label: "Adventure" },
-  { id: "pilgrimage", label: "Pilgrimage" },
-  { id: "medical-tourism", label: "Medical Tourism" },
-  { id: "events", label: "Events" },
+  { id: "all", label: "All" },
+  { id: "inbound-outbound-tours", label: "Tours" },
+  { id: "events-management", label: "Events" },
+  { id: "handicrafts-jewellery", label: "Handicrafts & Jewellery" },
 ];
 
 const Packages = () => {
@@ -71,10 +68,10 @@ const Packages = () => {
   return (
     <>
       <Helmet>
-        <title>Tour Packages | Siddhiyan - Explore Our Travel Offerings</title>
-        <meta 
-          name="description" 
-          content="Browse our curated collection of tour packages - from wildlife safaris and adventure trips to pilgrimage tours and destination weddings across India." 
+        <title>Our Offerings | Siddhiyan - Tours, Events & Handicrafts</title>
+        <meta
+          name="description"
+          content="Explore Siddhiyan's curated collection - from inbound & outbound tours, weddings & MICE events, to exquisite handicrafts and jewellery."
         />
         <link rel="canonical" href="https://www.siddhiyan.com/packages" />
       </Helmet>
@@ -99,7 +96,7 @@ const Packages = () => {
               transition={{ duration: 0.8 }}
               className="heading-display text-sand mb-4"
             >
-              Tour Packages
+              Our Offerings
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 30 }}
@@ -107,7 +104,7 @@ const Packages = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-xl font-sans text-sand/80"
             >
-              Discover your perfect getaway
+              Explore our complete range of services
             </motion.p>
           </div>
         </section>

@@ -52,8 +52,16 @@ const BestPractices = () => {
 
       <main>
         {/* Hero Section */}
-        <section className="relative pt-32 pb-20 bg-gradient-to-b from-muted to-background">
-          <div className="container-luxury">
+        <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+          <div className="absolute inset-0">
+            <img
+              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80"
+              alt="Best practices"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-charcoal/70 via-charcoal/50 to-charcoal/70" />
+          </div>
+          <div className="relative z-10 container-luxury">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -63,12 +71,12 @@ const BestPractices = () => {
               <span className="text-primary font-sans text-sm tracking-widest uppercase mb-4 block">
                 Our Standards
               </span>
-              <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
+              <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-sand mb-6">
                 Best Practices
               </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                At Siddhiyan, excellence isn't just a goal—it's our standard. Our best practices 
-                ensure every journey and event we manage meets the highest standards of quality, 
+              <p className="text-lg text-sand/80 leading-relaxed">
+                At Siddhiyan, excellence isn't just a goal—it's our standard. Our best practices
+                ensure every journey and event we manage meets the highest standards of quality,
                 safety, and sustainability.
               </p>
             </motion.div>

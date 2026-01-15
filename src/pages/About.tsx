@@ -31,12 +31,12 @@ const coreValues = [
 ];
 
 const milestones = [
-  { year: "2014", title: "Founded", description: "Siddhiyan established with a vision to transform travel experiences in India." },
-  { year: "2016", title: "100+ Clients", description: "Reached our first major milestone of serving over 100 satisfied travelers." },
+  { year: "2014", title: "Founded", description: "Siddhiyan established with a vision to deliver excellence in travel and services." },
+  { year: "2016", title: "100+ Clients", description: "Reached our first major milestone of serving over 100 satisfied customers." },
   { year: "2018", title: "Event Division", description: "Expanded services to include corporate events and destination weddings." },
-  { year: "2020", title: "Digital Transformation", description: "Adapted to new realities with virtual tours and enhanced digital booking." },
-  { year: "2022", title: "Pan-India Presence", description: "Extended our network to cover all major tourist destinations across India." },
-  { year: "2024", title: "10 Years Strong", description: "Celebrating a decade of creating unforgettable travel memories." }
+  { year: "2020", title: "Handicrafts & Jewellery", description: "Launched our exclusive handicrafts and jewellery division." },
+  { year: "2022", title: "Pan-India Presence", description: "Extended our network to cover all major destinations across India." },
+  { year: "2024", title: "Three Verticals Strong", description: "Leading in tours, events, and handicrafts & jewellery." }
 ];
 
 const teamMembers = [
@@ -68,9 +68,9 @@ const teamMembers = [
 
 const stats = [
   { icon: Calendar, value: "10+", label: "Years of Excellence" },
-  { icon: Users, value: "5000+", label: "Happy Travelers" },
-  { icon: Globe, value: "100+", label: "Destinations" },
-  { icon: Award, value: "50+", label: "Industry Awards" }
+  { icon: Users, value: "5000+", label: "Happy Customers" },
+  { icon: Globe, value: "100+", label: "Destinations Covered" },
+  { icon: Award, value: "500+", label: "Events Managed" }
 ];
 
 const About = () => {
@@ -79,8 +79,8 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Us | Siddhiyan - Your Trusted Travel Partner Since 2014</title>
-        <meta name="description" content="Learn about Siddhiyan's journey, our passionate team, and our commitment to creating exceptional travel experiences across India since 2014." />
+        <title>About Us | Siddhiyan - Tours, Events & Handicrafts</title>
+        <meta name="description" content="Learn about Siddhiyan's journey - your trusted partner for inbound & outbound tours, events management, and exquisite handicrafts & jewellery." />
       </Helmet>
       
       <Navbar />
@@ -120,7 +120,7 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl md:text-2xl max-w-2xl mx-auto opacity-90"
             >
-              A decade of crafting unforgettable journeys across incredible India
+              Excellence in travel, events, and exquisite craftsmanship
             </motion.p>
           </div>
         </section>
@@ -141,16 +141,16 @@ const About = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Founded in 2014, Siddhiyan began with a simple yet powerful vision: to transform how people experience travel in India. What started as a small team with big dreams has grown into one of the most trusted names in the travel industry.
+                    Siddhiyan is a diversified enterprise offering comprehensive services across three verticals: Inbound & Outbound Tours, Events Management, and Handicrafts & Jewellery. Our commitment to excellence has made us a trusted name across all our business domains.
                   </p>
                   <p>
-                    Our name "Siddhiyan" derives from the Sanskrit word for achievements and accomplishments. We believe every journey is an achievement – a collection of moments that stay with you forever. This philosophy drives everything we do.
+                    Our name "Siddhiyan" derives from the Sanskrit word for achievements and accomplishments. We believe every service we deliver is an achievement – a reflection of our dedication to quality and customer satisfaction.
                   </p>
                   <p>
-                    Over the past decade, we've had the privilege of serving over 5,000 travelers, planning more than 500 corporate events, and creating countless memories across 100+ destinations. But numbers only tell part of our story.
+                    From seamless travel experiences with air tickets, hotel bookings, and visa assistance, to magnificent weddings and corporate MICE events, to exquisite handcrafted sculptures and exclusive jewellery – we excel in everything we do.
                   </p>
                   <p>
-                    What truly sets us apart is our deep understanding of India's diverse landscapes, cultures, and hidden treasures. Our team doesn't just plan trips – we craft experiences that resonate with your soul.
+                    What truly sets us apart is our attention to detail and personalized approach. Whether you're planning a trip, an event, or looking for unique handicrafts and jewellery, our experienced team ensures an exceptional experience.
                   </p>
                 </div>
               </motion.div>
@@ -352,19 +352,19 @@ const About = () => {
               className="text-center max-w-3xl mx-auto"
             >
               <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6">
-                Ready to Start Your Journey?
+                Ready to Get Started?
               </h2>
               <p className="text-muted-foreground text-lg mb-8">
-                Let us help you create memories that will last a lifetime. Our team is ready to plan your perfect adventure.
+                Whether you need travel services, event management, or exquisite handicrafts & jewellery, our team is ready to assist.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button 
-                  variant="luxury" 
+                <Button
+                  variant="luxury"
                   size="xl"
                   onClick={() => setIsBookingOpen(true)}
                 >
                   <Star className="w-5 h-5 mr-2" />
-                  Plan My Trip
+                  Get Started
                 </Button>
                 <Button variant="outline" size="xl" asChild>
                   <a href="/contact">Contact Us</a>

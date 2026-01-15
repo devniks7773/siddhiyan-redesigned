@@ -11,24 +11,24 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Siddhiyan - Premium Travel & Event Management | India</title>
-        <meta 
-          name="description" 
-          content="Siddhiyan offers premium holiday tours, corporate event management, wildlife safaris, and medical tourism across India. 10+ years of crafting unforgettable journeys." 
+        <title>Siddhiyan - Tours, Events & Handicrafts | India</title>
+        <meta
+          name="description"
+          content="Siddhiyan offers inbound & outbound tours, events management (weddings & MICE), and exquisite handicrafts & jewellery. Your trusted partner for excellence."
         />
-        <meta name="keywords" content="travel agency India, event management, holiday tours, wildlife safari, medical tourism, destination wedding, corporate events" />
+        <meta name="keywords" content="travel agency India, event management, inbound tours, outbound tours, destination wedding, MICE events, handicrafts, gold jewellery, silver jewellery, sculptures" />
         <link rel="canonical" href="https://www.siddhiyan.com" />
-        
+
         {/* Open Graph */}
-        <meta property="og:title" content="Siddhiyan - Premium Travel & Event Management" />
-        <meta property="og:description" content="Crafting extraordinary travel experiences and seamless events since 2014. Your journey, our passion." />
+        <meta property="og:title" content="Siddhiyan - Tours, Events & Handicrafts" />
+        <meta property="og:description" content="Your trusted partner for seamless travel, unforgettable events, and exquisite handicrafts & jewellery." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.siddhiyan.com" />
-        
+
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Siddhiyan - Premium Travel & Event Management" />
-        <meta name="twitter:description" content="Crafting extraordinary travel experiences and seamless events since 2014." />
+        <meta name="twitter:title" content="Siddhiyan - Tours, Events & Handicrafts" />
+        <meta name="twitter:description" content="Your trusted partner for seamless travel, unforgettable events, and exquisite handicrafts & jewellery." />
       </Helmet>
 
       <main className="min-h-screen">

@@ -3,9 +3,9 @@ import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const features = [
-  "Personalized itineraries tailored to your preferences",
-  "24/7 dedicated support throughout your journey",
-  "Best-in-class accommodations and experiences",
+  "Complete travel solutions - domestic and international",
+  "Expert wedding and MICE event management",
+  "Authentic handicrafts and exclusive jewellery",
   "Transparent pricing with no hidden costs",
 ];
 
@@ -68,18 +68,17 @@ const AboutSection = () => {
               About Siddhiyan
             </span>
             <h2 className="heading-section text-foreground mb-6">
-              Your Trusted Partner in 
-              <span className="text-primary"> Extraordinary Journeys</span>
+              Your Trusted Partner for
+              <span className="text-primary"> Excellence & Craftsmanship</span>
             </h2>
             <p className="text-body-lg text-muted-foreground mb-8">
-              Founded in 2014, Siddhiyan has been at the forefront of premium travel 
-              and event management in India. We believe that every journey should be 
-              as unique as the traveler embarking on it.
+              Siddhiyan is your one-stop destination for premium travel services, memorable
+              event experiences, and exquisite handicrafts & jewellery collections.
             </p>
             <p className="font-sans text-muted-foreground mb-8">
-              From the majestic Himalayas to the serene backwaters of Kerala, from 
-              intimate corporate retreats to grand destination weddings – we transform 
-              visions into unforgettable realities.
+              From seamless inbound and outbound tours to stunning destination weddings,
+              from MICE events to handcrafted sculptures and exclusive gold & silver jewellery
+              – we deliver excellence in everything we do.
             </p>
 
             {/* Features List */}

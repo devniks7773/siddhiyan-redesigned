@@ -11,10 +11,9 @@ const quickLinks = [
 ];
 
 const serviceLinks = [
-  { name: "Holiday Tours", href: "/services/holiday-tours" },
-  { name: "Event Management", href: "/services/events" },
-  { name: "Medical Tourism", href: "/services/medical-tourism" },
-  { name: "Wildlife Safaris", href: "/services/wildlife" },
+  { name: "Inbound & Outbound Tours", href: "/services/inbound-outbound-tours" },
+  { name: "Events Management", href: "/services/events-management" },
+  { name: "Handicrafts & Jewellery", href: "/services/handicrafts-jewellery" },
 ];
 
 const Footer = () => {
@@ -29,8 +28,8 @@ const Footer = () => {
               Siddhiyan
             </h3>
             <p className="font-sans text-sand/70 leading-relaxed mb-6">
-              Crafting extraordinary travel experiences and seamless events since 2014. 
-              Your journey, our passion.
+              Your trusted partner for travel, events, and exquisite handicrafts & jewellery.
+              Excellence in every experience.
             </p>
             <div className="flex items-center gap-4">
               <a
@@ -106,10 +105,10 @@ const Footer = () => {
           {/* Column 4: Newsletter */}
           <div>
             <h4 className="font-serif text-lg font-semibold text-sand mb-6">
-              Subscribe for Travel Deals
+              Stay Connected
             </h4>
             <p className="font-sans text-sand/70 text-sm mb-4">
-              Get exclusive offers and travel inspiration delivered to your inbox.
+              Get exclusive offers and updates delivered to your inbox.
             </p>
             <div className="flex gap-2">
               <Input

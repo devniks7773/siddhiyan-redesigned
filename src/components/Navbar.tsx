@@ -12,9 +12,9 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const serviceLinks = [
-  { name: "Travel & Tours", href: "/services/travel-and-tours" },
-  { name: "Managing Events", href: "/services/event-management" },
-  { name: "Destination Marketing", href: "/services/destination-marketing" },
+  { name: "Inbound & Outbound Tours", href: "/services/inbound-outbound-tours" },
+  { name: "Events Management", href: "/services/events-management" },
+  { name: "Handicrafts & Jewellery", href: "/services/handicrafts-jewellery" },
 ];
 
 const Navbar = () => {
@@ -77,7 +77,7 @@ const Navbar = () => {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
-              className="hidden lg:flex container-luxury justify-between items-center text-sm mb-3 text-foreground/80"
+              className="hidden lg:flex container-luxury justify-between items-center text-sm mb-3 text-sand/90"
             >
               <div className="flex items-center gap-6">
                 <a href="tel:+919415037315" className="flex items-center gap-2 hover:text-primary transition-colors">
@@ -106,10 +106,12 @@ const Navbar = () => {
 
         <nav className="container-luxury flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
-            <span className="font-serif text-2xl md:text-3xl font-bold text-primary">
-              Siddhiyan
-            </span>
+          <Link to="/" className="flex items-center">
+            <img
+              src="/assets/logo.png"
+              alt="Siddhiyan"
+              className="h-10 md:h-12 w-auto bg-white px-4 rounded-lg"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -117,21 +119,21 @@ const Navbar = () => {
             <Link
               to="/"
               className={`font-sans text-sm font-medium transition-colors relative group ${
-                isActive("/") ? "text-primary" : "text-foreground/80 hover:text-primary"
+                isActive("/") ? "text-terracotta-light" : isScrolled ? "text-foreground/80 hover:text-terracotta-light" : "text-sand hover:text-terracotta-light"
               }`}
             >
               Home
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-terracotta-light transition-all duration-300 group-hover:w-full" />
             </Link>
 
             <Link
               to="/about"
               className={`font-sans text-sm font-medium transition-colors relative group ${
-                isActive("/about") ? "text-primary" : "text-foreground/80 hover:text-primary"
+                isActive("/about") ? "text-terracotta-light" : isScrolled ? "text-foreground/80 hover:text-terracotta-light" : "text-sand hover:text-terracotta-light"
               }`}
             >
               About
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-terracotta-light transition-all duration-300 group-hover:w-full" />
             </Link>
 
             {/* Services Dropdown */}
@@ -139,12 +141,12 @@ const Navbar = () => {
               <DropdownMenuTrigger asChild>
                 <button
                   className={`font-sans text-sm font-medium transition-colors relative group flex items-center gap-1 ${
-                    isServicesActive ? "text-primary" : "text-foreground/80 hover:text-primary"
+                    isServicesActive ? "text-terracotta-light" : isScrolled ? "text-foreground/80 hover:text-terracotta-light" : "text-sand hover:text-terracotta-light"
                   }`}
                 >
                   Services
                   <ChevronDown size={14} />
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-terracotta-light transition-all duration-300 group-hover:w-full" />
                 </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start" className="bg-background border border-border shadow-luxury min-w-[200px]">
@@ -153,7 +155,7 @@ const Navbar = () => {
                     <Link
                       to={link.href}
                       className={`w-full cursor-pointer ${
-                        isActive(link.href) ? "text-primary" : ""
+                        isActive(link.href) ? "text-terracotta-light" : ""
                       }`}
                     >
                       {link.name}
@@ -166,21 +168,21 @@ const Navbar = () => {
             <Link
               to="/best-practices"
               className={`font-sans text-sm font-medium transition-colors relative group ${
-                isActive("/best-practices") ? "text-primary" : "text-foreground/80 hover:text-primary"
+                isActive("/best-practices") ? "text-terracotta-light" : isScrolled ? "text-foreground/80 hover:text-terracotta-light" : "text-sand hover:text-terracotta-light"
               }`}
             >
               Best Practices
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-terracotta-light transition-all duration-300 group-hover:w-full" />
             </Link>
 
             <Link
               to="/clients"
               className={`font-sans text-sm font-medium transition-colors relative group ${
-                isActive("/clients") ? "text-primary" : "text-foreground/80 hover:text-primary"
+                isActive("/clients") ? "text-terracotta-light" : isScrolled ? "text-foreground/80 hover:text-terracotta-light" : "text-sand hover:text-terracotta-light"
               }`}
             >
               Clients
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-terracotta-light transition-all duration-300 group-hover:w-full" />
             </Link>
           </div>
 
@@ -195,7 +197,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="lg:hidden p-2 text-foreground"
+            className={`lg:hidden p-2 transition-colors ${isScrolled ? "text-foreground" : "text-sand"}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >

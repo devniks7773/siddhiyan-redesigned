@@ -37,7 +37,7 @@ const Hero = () => {
           transition={{ duration: 0.6 }}
           className="inline-block font-sans text-sm md:text-base tracking-[0.3em] uppercase text-sand mb-6"
         >
-          Premium Travel & Event Management
+          Tours | Events | Handicrafts & Jewellery
         </motion.span>
 
         <motion.h1
@@ -57,8 +57,8 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-body-lg text-sand/90 max-w-2xl mx-auto mb-10"
         >
-          Curating unforgettable holidays, seamless corporate events, and 
-          extraordinary destination experiences across India and beyond.
+          Your trusted partner for seamless travel experiences, unforgettable events,
+          and exquisite handicrafts & jewellery collections.
         </motion.p>
 
         <motion.div
@@ -68,10 +68,10 @@ const Hero = () => {
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <Button variant="luxury" size="xl" onClick={() => navigate("/packages")}>
-            Start Planning
+            Explore Services
           </Button>
-          <Button variant="luxuryOutline" size="xl" onClick={() => navigate("/packages")}>
-            Explore Destinations
+          <Button variant="luxuryOutline" size="xl" onClick={() => navigate("/contact")}>
+            Contact Us
           </Button>
         </motion.div>
       </div>

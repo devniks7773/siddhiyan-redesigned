@@ -8,13 +8,13 @@ const clientCategories = [
   {
     icon: Building2,
     title: "Corporate Clients",
-    description: "We've partnered with leading corporations for their travel and event management needs.",
+    description: "We've partnered with leading corporations for travel, events, and corporate gifting needs.",
     clients: ["Tech Solutions Inc.", "Global Finance Corp.", "Healthcare Partners", "Manufacturing Leaders Ltd."],
   },
   {
     icon: Globe,
     title: "Government & PSUs",
-    description: "Trusted by government bodies and public sector organizations for official travel and events.",
+    description: "Trusted by government bodies and public sector organizations for official travel, events, and handicrafts procurement.",
     clients: ["State Tourism Board", "Ministry of Culture", "Public Works Department", "National Health Mission"],
   },
   {
@@ -25,9 +25,9 @@ const clientCategories = [
   },
   {
     icon: Award,
-    title: "MICE & Associations",
-    description: "Delivering exceptional experiences for meetings, incentives, conferences, and exhibitions.",
-    clients: ["Medical Association of India", "Chamber of Commerce", "Engineers' Forum", "Tourism Association"],
+    title: "MICE & Retail",
+    description: "Delivering exceptional experiences for MICE events and exclusive jewellery & handicrafts retail.",
+    clients: ["Medical Association of India", "Chamber of Commerce", "Luxury Retail Partners", "Tourism Association"],
   },
 ];
 
@@ -45,7 +45,7 @@ const Clients = () => {
         <title>Our Clients | Siddhiyan - Trusted by Leading Organizations</title>
         <meta
           name="description"
-          content="Discover the organizations that trust Siddhiyan for their travel and event management needs. From corporates to government bodies, we deliver excellence."
+          content="Discover the organizations that trust Siddhiyan for tours, events, and handicrafts & jewellery. From corporates to government bodies, we deliver excellence."
         />
       </Helmet>
 
@@ -53,8 +53,16 @@ const Clients = () => {
 
       <main>
         {/* Hero Section */}
-        <section className="relative pt-32 pb-20 bg-gradient-to-b from-muted to-background">
-          <div className="container-luxury">
+        <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+          <div className="absolute inset-0">
+            <img
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2000&q=80"
+              alt="Our clients"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-charcoal/70 via-charcoal/50 to-charcoal/70" />
+          </div>
+          <div className="relative z-10 container-luxury">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -64,12 +72,12 @@ const Clients = () => {
               <span className="text-primary font-sans text-sm tracking-widest uppercase mb-4 block">
                 Our Partners
               </span>
-              <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
+              <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-sand mb-6">
                 Our Valued Clients
               </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Over the years, we've had the privilege of working with some of the most 
-                respected organizations across industries. Their trust drives our commitment 
+              <p className="text-lg text-sand/80 leading-relaxed">
+                Over the years, we've had the privilege of working with some of the most
+                respected organizations across industries. Their trust drives our commitment
                 to excellence.
               </p>
             </motion.div>
